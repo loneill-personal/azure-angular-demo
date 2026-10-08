@@ -1,13 +1,18 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
+  imports: [],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'azure-angular-demo';
+  title = 'Liam\'s Demo App';
+  isSpooky = false;
+
+  onClick() {
+    this.title = 'Happy Halloween!';
+    this.isSpooky = true;
+  }
 }
