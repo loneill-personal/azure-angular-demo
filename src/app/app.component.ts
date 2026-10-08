@@ -12,7 +12,7 @@ export class AppComponent {
   isSpooky = false;
 
   onClick() {
-    this.title = 'Happy Halloween!';
+    this.title = 'Happy Halloween from Azure! 🎃';
     this.isSpooky = true;
   }
 }
